@@ -7,7 +7,6 @@
    Cambia esta fecha por la fecha que quieras utilizar
    para el contador.
 */
-const fechaInicio = "2026-08-01";
 
 /*
    CONTENIDO DE LAS CARTAS
@@ -20,21 +19,31 @@ const cards = {
     title: "Una carta para ti",
     body: `
       <div class="modal-text">
-        Hay cosas que a veces no digo porque simplemente
-        me cuesta encontrar el momento adecuado.
+        
+         <br><br>
+         Hay algo especial en poder volver a compartir momentos contigo después de tantos años, descubrirnos nuevamente y ver todo lo que hemos cambiado desde entonces.
+         <br><br>
+         No voy a negar que contigo he empezado a imaginar cosas que antes simplemente no estaban en mis plans. He pensado en compartir más momentos, en crecer juntos, en construir algo bonito y, algún día, formar una familia. Es algo que te he dicho porque es lo que realmente quiero, no porque espere que tú tengas que sentir exactamente lo mismo ahora.
+         También entiendo que tienes tus propios miedos, tus dudas y tu propio camino. Y quiero aprender a respetar eso.
         <br><br>
-        Pero quería dejar esto aquí para que pudieras leerlo
-        cuando quisieras:
+        <strong>No quiero que sientas que tienes que tener todas las respuestas hoy </strong>
+        <br><br> 
+        Quizás no sepamos exactamente qué va a pasar con nosotros. Quizás todavía tengamos muchas cosas que aprender, sanar y descubrir. Pero creo que algunas historias no necesitan tener todo escrito para que valga la pena seguir viviéndolas.
+
         <br><br>
-        <strong>Me alegra que nuestras historias hayan vuelto
-        a encontrarse.</strong>
-        <br><br>
-        Y aunque no sé exactamente qué nos espera,
-        me gusta saber que todavía podemos crear recuerdos
-        que algún día vamos a mirar con cariño.
-        <br><br>
-        No hice esta cápsula porque hubiera una fecha especial.
-        La hice porque hoy pensé en ti.
+        Por eso hice esta pequeña cápsula.
+         <br>
+         No por una fecha especial.
+          <br>
+         No porque espere algo de ti.
+          <br>
+         No para convencerte de nada.
+         <br> <br>
+         La hice simplemente porque hoy pensé en ti y quise dejarte un recuerdo de lo que siento.
+         <br>
+         <strong> Con cariño,
+         Joe </strong>
+
       </div>
     `
   },
@@ -43,7 +52,7 @@ const cards = {
     icon: "📸",
     title: "Un recuerdo",
     body: `
-      <img class="modal-image" src="img/foto3.jpg" alt="Recuerdo">
+      <img class="modal-image" src="img/foto1.jpg" alt="Recuerdo">
       <div class="modal-text">
         Este es uno de esos momentos que quiero conservar.
         <br><br>
@@ -58,14 +67,11 @@ const cards = {
     title: "Lo que admiro de ti",
     body: `
       <div class="modal-text">
-        Admiro tu forma de seguir adelante incluso cuando
-        las cosas no son fáciles.
+        Admiro tu fortaleza, incluso en esos momentos en los que quizá tú misma no te das cuenta de lo fuerte que eres.
         <br><br>
-        Admiro las pequeñas cosas que haces y que quizá
-        tú misma no consideras importantes.
+        Admiro tu forma de sentir, de pensar y de defender lo que quieres, porque detrás de todo eso hay una mujer con mucho valor.
         <br><br>
-        Y sobre todo, admiro esa parte de ti que todavía
-        puede sorprenderme.
+        Y sobre todo, admiro esa esencia que tienes, porque incluso con todo lo que hemos vivido, sigues siendo alguien que quiero conocer, cuidar y valorar cada día más. ❤️
       </div>
     `
   },
@@ -75,20 +81,17 @@ const cards = {
     title: "Lo que todavía quiero vivir",
     body: `
       <div class="modal-text">
-        No quiero llenar esta parte con promesas enormes.
-        <br><br>
-        Prefiero cosas sencillas:
-        <br><br>
-        Una salida improvisada.<br>
-        Una noche hablando hasta tarde.<br>
-        Un viaje juntos.<br>
-        Una fotografía que todavía no existe.<br>
-        Una tarde en la que no tengamos absolutamente nada
-        que hacer.
-        <br><br>
-        Porque quizá los mejores recuerdos terminen siendo
-        precisamente los que no planeamos demasiado.
-      </div>
+       
+        Quiero vivir un camino contigo, no uno perfecto, sino uno real.
+        Un camino donde, aunque aparezcan obstáculos, aprendamos a tomarnos de la mano y seguir adelante.
+        <br>
+        Quiero vivir más momentos, más risas, más conversaciones, más aventuras y también esos días difíciles en los que podamos elegirnos nuevamente.
+        <br>
+          No quiero apresurar el futuro. Quiero construirlo poco a poco, convirtiéndome en la persona que pueda caminar a tu lado y demostrártelo con hechos..
+        <br>
+        <br>
+         Tener una album con muchos recuerdos, y que cada uno de ellos sea un testimonio de lo que hemos vivido juntos.
+          </div>
     `
   }
 };
