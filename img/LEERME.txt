@@ -1,0 +1,2 @@
+Coloca aquí foto1.jpg, foto2.jpg y foto3.jpg.
+Puedes reemplazar los nombres en index.html y script.js.

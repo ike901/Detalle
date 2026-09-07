@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b1a">
+  <title>Una pequeña cápsula para ti ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ESTRELLAS / PARTÍCULAS -->
+  <div class="stars" aria-hidden="true"></div>
+  <div class="shooting-stars" aria-hidden="true"></div>
+
+  <!-- BOTÓN DE MÚSICA -->
+  <button id="musicBtn" class="music-btn" aria-label="Reproducir música">♫</button>
+  <!-- Cambia audio/musica.mp3 por tu canción si deseas otro nombre -->
+  <audio id="music" loop preload="auto">
+    <source src="audio/musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- PANTALLA INICIAL -->
+  <main id="intro" class="screen active">
+    <div class="moon-glow"></div>
+
+    <section class="intro-card">
+      <div class="tiny-label">UNA PEQUEÑA SORPRESA</div>
+      <div class="envelope">💌</div>
+
+      <!-- CAMBIA ESTE TEXTO -->
+      <h1>Una pequeña cápsula para ti</h1>
+
+      <!-- CAMBIA ESTE TEXTO -->
+      <p class="subtitle">
+        No necesitas una fecha especial para guardar algo bonito.
+      </p>
+
+      <p class="hint">Hay algunas cosas aquí que quería guardar para ti...</p>
+
+      <button id="openCapsule" class="primary-btn">
+        Abrir cápsula <span>→</span>
+      </button>
+    </section>
+  </main>
+
+  <!-- CONTENIDO -->
+  <main id="capsule" class="screen">
+
+    <header class="hero">
+      <div class="tiny-label">PARA TI</div>
+
+      <!-- CAMBIA ESTE TÍTULO -->
+      <h2>Algunas cosas que quería decirte</h2>
+
+      <!-- CAMBIA ESTE TEXTO -->
+      <p>
+        No son grandes promesas ni necesitan una fecha.
+        Simplemente son pensamientos que hoy quise guardar aquí.
+      </p>
+    </header>
+
+    <!-- CONTADOR -->
+    <section class="counter-card reveal">
+      <div>
+        <span class="counter-number" id="daysCounter">0</span>
+        <span class="counter-label">días</span>
+      </div>
+      <div class="counter-text">
+        <!-- CAMBIA LA FECHA EN script.js -->
+        <strong>Desde que nuestras historias volvieron a encontrarse</strong>
+        <span>Y todavía quedan muchas páginas por escribir.</span>
+      </div>
+    </section>
+
+    <!-- CARTAS -->
+    <section class="letters-section">
+      <div class="section-heading">
+        <span>01</span>
+        <h3>Pequeños recuerdos</h3>
+      </div>
+
+      <div class="memory-grid">
+
+        <!-- CARTA 1 -->
+        <article class="memory-card locked reveal">
+          <div class="card-icon">💌</div>
+          <div class="lock">🔒</div>
+          <h4>Una carta</h4>
+          <p>Algo que quería decirte.</p>
+          <button class="open-card" data-card="letter">Abrir</button>
+        </article>
+
+        <!-- CARTA 2 -->
+        <article class="memory-card locked reveal">
+          <div class="card-icon">📸</div>
+          <div class="lock">🔒</div>
+          <h4>Un recuerdo</h4>
+          <p>Un momento que quiero conservar.</p>
+          <button class="open-card" data-card="photo">Abrir</button>
+        </article>
+
+        <!-- CARTA 3 -->
+        <article class="memory-card locked reveal">
+          <div class="card-icon">🌷</div>
+          <div class="lock">🔒</div>
+          <h4>Lo que admiro de ti</h4>
+          <p>Algunas cosas que quizá no digo suficiente.</p>
+          <button class="open-card" data-card="admire">Abrir</button>
+        </article>
+
+        <!-- CARTA 4 -->
+        <article class="memory-card locked reveal">
+          <div class="card-icon">✨</div>
+          <div class="lock">🔒</div>
+          <h4>Lo que quiero vivir</h4>
+          <p>Algunas páginas que todavía faltan.</p>
+          <button class="open-card" data-card="future">Abrir</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- FOTO PRINCIPAL -->
+    <section class="photo-section reveal">
+      <div class="section-heading">
+        <span>02</span>
+        <h3>Un recuerdo para guardar</h3>
+      </div>
+
+      <div class="photo-frame">
+        <!-- CAMBIA img/foto1.jpg POR TU FOTO -->
+        <img src="img/foto1.jpg" alt="Nuestro recuerdo">
+        <div class="photo-caption">
+          <!-- CAMBIA ESTE TEXTO -->
+          “Hay momentos que uno quisiera guardar para siempre.”
+        </div>
+      </div>
+    </section>
+
+    <!-- COSAS QUE QUIERO VIVIR -->
+    <section class="future-section reveal">
+      <div class="section-heading">
+        <span>03</span>
+        <h3>Las páginas que faltan</h3>
+      </div>
+
+      <div class="future-list">
+        <!-- PUEDES CAMBIAR ESTOS ELEMENTOS -->
+        <div class="future-item">
+          <span>01</span>
+          <p>Una tarde tranquila hablando de cualquier cosa.</p>
+        </div>
+        <div class="future-item">
+          <span>02</span>
+          <p>Un viaje que algún día podamos recordar con una sonrisa.</p>
+        </div>
+        <div class="future-item">
+          <span>03</span>
+          <p>Una foto que todavía no existe.</p>
+        </div>
+        <div class="future-item">
+          <span>04</span>
+          <p>Muchos momentos que todavía no sabemos que serán importantes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOTO FINAL -->
+    <section class="final-photo reveal">
+      <!-- CAMBIA img/foto2.jpg POR TU FOTO -->
+      <img src="img/foto2.jpg" alt="Un momento especial">
+    </section>
+
+    <!-- MENSAJE FINAL -->
+    <section class="final-message reveal">
+      <div class="heart">♡</div>
+
+      <!-- CAMBIA ESTE MENSAJE -->
+      <h2>Para cuando vuelvas a abrir esto</h2>
+
+      <p>
+        Quizá cuando vuelvas a leer estas palabras hayan pasado meses,
+        quizá años. No sé dónde estaremos entonces.
+      </p>
+
+      <p>
+        Pero sí sé que hoy quise hacer esto simplemente porque me nació.
+        Sin cumpleaños, sin aniversario y sin una razón especial.
+      </p>
+
+      <p class="signature">
+        Solo porque eres alguien importante para mí.
+      </p>
+
+      <div class="closing">❤️</div>
+    </section>
+
+    <footer>
+      Hecho con cariño · <span id="year"></span>
+    </footer>
+  </main>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+    <div class="modal-backdrop"></div>
+
+    <div class="modal-content">
+      <button id="closeModal" class="close-modal">×</button>
+
+      <div id="modalIcon" class="modal-icon">💌</div>
+      <h3 id="modalTitle"></h3>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
